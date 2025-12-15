@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+/* Design System: Only milky white (#FAFAF8) and deep black (#0A0A0A) */
+:root {
+  --milky: #FAFAF8;
+  --deep: #0A0A0A;
+  
+  /* Light mode colors */
+  --bg-primary: var(--milky);
+  --bg-secondary: rgba(10, 10, 10, 0.02);
+  --bg-hover: rgba(10, 10, 10, 0.05);
+  --text-primary: var(--deep);
+  --text-80: rgba(10, 10, 10, 0.8);
+  --text-70: rgba(10, 10, 10, 0.7);
+  --text-60: rgba(10, 10, 10, 0.6);
+  --text-50: rgba(10, 10, 10, 0.5);
+  --text-40: rgba(10, 10, 10, 0.4);
+  --border-10: rgba(10, 10, 10, 0.1);
+  --border-20: rgba(10, 10, 10, 0.2);
+  --border-primary: var(--deep);
+}
+
+html.dark {
+  /* Dark mode colors */
+  --bg-primary: var(--deep);
+  --bg-secondary: rgba(250, 250, 248, 0.02);
+  --bg-hover: rgba(250, 250, 248, 0.05);
+  --text-primary: var(--milky);
+  --text-80: rgba(250, 250, 248, 0.8);
+  --text-70: rgba(250, 250, 248, 0.7);
+  --text-60: rgba(250, 250, 248, 0.6);
+  --text-50: rgba(250, 250, 248, 0.5);
+  --text-40: rgba(250, 250, 248, 0.4);
+  --border-10: rgba(250, 250, 248, 0.1);
+  --border-20: rgba(250, 250, 248, 0.2);
+  --border-primary: var(--milky);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  font-family: 'Inter', 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.5s, color 0.5s;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
+}
