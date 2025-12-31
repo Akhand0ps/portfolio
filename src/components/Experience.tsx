@@ -31,7 +31,7 @@ export default function Experience() {
               style={{ borderColor: 'var(--border-10)' }}
             >
               {/* Timeline Dot */}
-              <div className="absolute left-[-5px] top-1 w-2 h-2 rounded-full" style={{ backgroundColor: 'var(--text-primary)' }} />
+              <div className="absolute -left-1.25 top-1 w-2 h-2 rounded-full" style={{ backgroundColor: 'var(--text-primary)' }} />
 
               {/* Type Badge */}
               <span className="inline-block text-xs px-2 py-1 rounded mb-2" style={{ backgroundColor: 'var(--bg-hover)', fontFamily: 'JetBrains Mono, monospace' }}>
